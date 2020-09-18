@@ -121,7 +121,7 @@ this function maps the redux state to props
 
 function mapStateToProps(state, ownProps) {
     return {
-        notes: state.notes
+        todos: state.todos
     };
 } 
 ```
@@ -132,7 +132,7 @@ export default connect(mapStateToProps, { getTodos })(App);
 
  ```
     componentDidMount() {
-        this.props.getNotes();
+        this.props.getTodos();
     } 
 
     ```
